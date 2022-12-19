@@ -331,7 +331,7 @@ CLANG_SUPPRESS_Wfloat_equal
     auto     paddedHistogramSize = static_cast<unsigned int>(std::pow(static_cast<RealType>(2.0), exponent) + 0.5);
     auto     histogramOffset = static_cast<unsigned int>(0.5 * (paddedHistogramSize - this->m_NumberOfHistogramBins));
 
-    using FFTComputationType = double;
+    using FFTComputationType = RealType;
     using FFTComplexType = std::complex<FFTComputationType>;
 
     vnl_vector<FFTComplexType> V(paddedHistogramSize, FFTComplexType(0.0, 0.0));
