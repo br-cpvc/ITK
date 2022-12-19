@@ -325,7 +325,7 @@ N4BiasFieldCorrectionImageFilter<TInputImage, TMaskImage, TOutputImage>
   auto histogramOffset = static_cast<unsigned int>( 0.5 *
     ( paddedHistogramSize - this->m_NumberOfHistogramBins ) );
 
-  using FFTComputationType = double;
+  using FFTComputationType = RealType;
   using FFTComplexType = std::complex<FFTComputationType>;
 
   vnl_vector< FFTComplexType > V( paddedHistogramSize,
