@@ -625,7 +625,7 @@ template <typename T1, typename T2>
 inline bool
 AlmostEquals( T1 x1, T2 x2 )
 {
-  return Detail::AlmostEqualsComplexImplementer<T1,T2>::ChosenVersion::AlmostEqualsFunction(x1, x2);
+  return Detail::AlmostEqualsScalarImplementer<T1,T2>::SelectedVersion::AlmostEqualsFunction(x1, x2);
 }
 
 // The NotAlmostEquals function
